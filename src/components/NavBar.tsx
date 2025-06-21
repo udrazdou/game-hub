@@ -7,11 +7,11 @@ interface Props {
   onSearch: (searchText: string) => void;
 }
 
-const NavBar = ({ onSearch }: Props) => {
+const NavBar = () => {
   return (
     <HStack padding="10px">
       <Image src={logo} boxSize="60px" />
-      <SearchInput onSearch={onSearch} />
+      <SearchInput />
       <ColorModeSwitch />
     </HStack>
   );
