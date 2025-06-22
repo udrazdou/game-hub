@@ -4,6 +4,7 @@ import CriticScore from "../components/CriticScore";
 import DefinitionItem from "../components/DefinitionItem";
 import ExtandableText from "../components/ExtandableText";
 import GameAttributes from "../components/GameAttributes";
+import GameScreenshot from "../components/GameScreenshot";
 import GameTrailer from "../components/GameTrailer";
 import useGame from "../hooks/useGame";
 
@@ -20,6 +21,7 @@ const GameDetailPage = () => {
       <ExtandableText>{game.description_raw}</ExtandableText>{" "}
       <GameAttributes game={game}></GameAttributes>
       <GameTrailer gameId={game.id}></GameTrailer>
+      <GameScreenshot gameId={game.id}></GameScreenshot>
     </>
   );
 };
