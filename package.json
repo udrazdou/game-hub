@@ -8,6 +8,10 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "engines": {
+    "node": "18.x",
+    "npm": ">=9"
+  },
   "dependencies": {
     "@chakra-ui/react": "^2.10.9",
     "@emotion/react": "^11.14.0",
